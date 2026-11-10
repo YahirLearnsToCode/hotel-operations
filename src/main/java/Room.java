@@ -23,4 +23,23 @@ public class Room {
     public boolean isAvailable() {
         return !occupied;
     }
+
+    public void checkIn() {
+        if (isOccupied() || isDirty()) {
+            System.out.println("Room is not ready just yet");
+        } else {
+            this.occupied = true;
+            this.dirty = true;
+        }
+    }
+
+    public void checkOut() {
+        this.occupied = false;
+        this.dirty = false;
+
+    }
+
+    public void cleanRoom() {
+        this.dirty = false;
+    }
 }
