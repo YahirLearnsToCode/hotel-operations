@@ -31,8 +31,4 @@ public class Employee {
         endTime = LocalTime.now().getHour();
         hoursWorked += endTime - startTime;
     }
-
-    public void punchTimeCard() {
-
-    }
 }
