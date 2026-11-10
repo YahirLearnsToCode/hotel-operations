@@ -23,6 +23,13 @@ public class Employee {
         return 0;
     }
 
+    public void punchIn(int time) {
+        int startTime = time;
+    }
+
+    public void punchOut(int time) {
+        hoursWorked += time - startTime;
+    }
     public void punchIn() {
         this.startTime = LocalTime.now().getHour();
     }
