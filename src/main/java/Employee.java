@@ -30,12 +30,12 @@ public class Employee {
     public void punchOut(int time) {
         hoursWorked += time - startTime;
     }
-    public void punchIn() {
-        this.startTime = LocalTime.now().getHour();
-    }
-
-    public void punchOut() {
-        endTime = LocalTime.now().getHour();
-        hoursWorked += endTime - startTime;
-    }
+//    public void punchIn() {
+//        this.startTime = LocalTime.now().getHour();
+//    }
+//
+//    public void punchOut() {
+//        endTime = LocalTime.now().getHour();
+//        hoursWorked += endTime - startTime;
+//    }
 }
